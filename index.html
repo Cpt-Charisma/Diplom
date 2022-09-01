@@ -158,7 +158,7 @@
           </div>
     </section>
 
-    <section class="company" id="company">
+    <section class="company">
         <div class="container container-company">
           <h2 class="text-center">О компании</h2>
           <div class="row align-items-center">
@@ -198,7 +198,7 @@
         </div>
     </section>
 
-    <footer class="footer" id="footer">
+    <footer class="footer">
       <div class="container container-footer">
         <h2 class="text-center">Контакты</h2>
         <div class="row">
@@ -274,11 +274,31 @@
         scrollToSection(document.querySelector(".primacy"));
       })
       company.addEventListener("click", ()=> {
-        scrollToSection(company);
+        scrollToSection(document.querySelector(".company"));
       })
       footer.addEventListener("click", ()=> {
         scrollToSection(document.querySelector(".footer"));
       })
+      
+
+      // let btnMain = document.querySelector(".btnMain")
+      // function mouseOver() {
+      //     console.log("hover")
+      //   btnMain.style.backgroundColor = "#A9B4D2";
+      //   }
+      // function mouseOut() {
+      //     console.log("hover")
+      //   btnMain.style.backgroundColor = "#E4EEF1";
+      //   }
+
+      
+
+      //   btnMain.addEventListener("mouseover", mouseOver)
+      //   btnMain.removeEventListener("mouseout", mouseOut)
+
+      
+
+
       
     </script>
     
