@@ -43,7 +43,7 @@
               </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-              <button class="btn btn-outline btnheader my-2 my-sm-0" type="submit">Заказать звонок</button>
+              <button class="btn btn-outline btnheader my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal" type="submit">Заказать звонок</button>
             </form>
           </div>
         </nav>
@@ -60,7 +60,7 @@
             <p class="main_p">
               Позвоните нам и узнайте как оформить ЭЦП в максимально короткий срок
             </p>
-            <button type="button" class="btn btn-lg btnMain">Заказать звонок</button>
+            <button type="button" class="btn btn-lg btnMain" data-toggle="modal" data-target="#exampleModal">Заказать звонок</button>
           </div>
           <div class="col-md">
             <img src="img/main.png" class="img-fluid" alt="">
@@ -83,7 +83,7 @@
                   <li class="list-group-item cards">Отправка отчетности в ФНС</li>
                 </ul>
                 <p class="price">5000 р.</p>
-                <button type="button" class="btn btn-lg btnMain">Заказать звонок</button>
+                <button type="button" class="btn btn-lg btnMain" data-toggle="modal" data-target="#exampleModal">Заказать звонок</button>
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@
                   <li class="list-group-item cards">Отправка отчетности в ФСС</li>
                 </ul>
                 <p class="price">10000 р.</p>
-                <button type="button" class="btn btn-lg btnMain">Заказать звонок</button>
+                <button type="button" class="btn btn-lg btnMain" data-toggle="modal" data-target="#exampleModal">Заказать звонок</button>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@
                   <li class="list-group-item cards">Электронный документооборот</li>
                 </ul>
                 <p class="price">15000 р.</p>
-                <button type="button" class="btn btn-lg btnMain">Заказать звонок</button>
+                <button type="button" class="btn btn-lg btnMain" data-toggle="modal" data-target="#exampleModal">Заказать звонок</button>
               </div>
             </div>
           </div>
@@ -231,7 +231,32 @@
 
     <img src="img/UP.png" class="scroll_up" alt="">
 
-
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Напишите нам!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form class="p-3">
+            <div class="form-group">
+              <label for="exampleInputName">Имя:</label>
+              <input type="text" class="form-control" id="exampleInputName" 
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPhone">Телефон:</label>
+              <input type="tel" class="form-control" id="exampleInputPhone">
+              <small id="TelHelp" class="form-text text-muted">Телефон в формате +7()___-__-__.</small>
+            </div>
+            <p class="">И мы перезвонить вам, в течении 5 минут.</p>
+            <button type="submit" class="btn btnMain">Отправить</button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
     
 
     <script
